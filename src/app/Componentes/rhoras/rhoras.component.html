@@ -1,0 +1,47 @@
+<div id="reporte">
+    <div class="col-12 col-md-12"
+        style="text-align: center;">
+        <h2 class="col-12 text-white" 
+        style="text-align: center;">Reporte de Horas Trabajadas por Dia</h2>
+    
+        <form class="col-12 mt-5" 
+        style="text-align: center;">
+
+        <label class="col-4 col-md-3 text-white">Inicio:</label>
+        <input class="col-8 col-md-3" type="date" name="init" [(ngModel)]="horaInicio">
+
+        <label class="col-4 col-md-3 text-white" style="">Fin:</label>
+        <input class="col-8 col-md-3" type="date" name="end"  [(ngModel)]="horaFin" >
+     
+        <br>
+        <button class="col-6 col-md-2 m-4"
+              style="text-align: center;" 
+              (click)="obtenerHoras()">Consultar</button>
+    </form>
+    </div>
+
+    <div class="col-12 text-center"
+        *ngFor="let pro of pro">
+
+        <h4 class="col-12 text-center" id="lol2345">
+            {{pro}}
+        </h4>
+    </div>
+
+    <br>
+
+    <div id="grafica"
+    class="">
+    <canvas id="migrafica"></canvas>
+    </div>
+
+</div>
+
+
+
+<div *ngIf="mostrar"
+class="col-12 col-md-12 text-center">
+    <button class="col-6 col-md-3 text-center"
+    (click)="descargarPDF()">
+        Descargar PDF</button>
+</div>
