@@ -4,18 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { MapaappComponent } from './mapaapp/mapaapp.component';
 import { RhorasComponent } from './rhoras/rhoras.component';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
   MapaappComponent,
-  RhorasComponent],
+  RhorasComponent,
+  CalculadoraComponent],
   imports: [
     CommonModule,
     FormsModule,
   ],
   exports: [
     MapaappComponent,
-    RhorasComponent
-  ]
+    RhorasComponent,
+    CalculadoraComponent]
 })
 export class ComponentModuleModule { }

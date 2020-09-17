@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~leaflet/dist/leaflet.css";
 body{
-    background-color: #595952;
+    background-color: hsl(60, 4%, 34%);
+    background-image: url('../src/assets/fondos/tablero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed
+
 }
 .dpopus{
     text-align: center;

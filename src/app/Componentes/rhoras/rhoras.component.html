@@ -14,7 +14,7 @@
         <input class="col-8 col-md-3" type="date" name="end"  [(ngModel)]="horaFin" >
      
         <br>
-        <button class="col-6 col-md-2 m-4"
+        <button class="col-6 col-md-2 m-4 btn btn-info"
               style="text-align: center;" 
               (click)="obtenerHoras()">Consultar</button>
     </form>
@@ -41,7 +41,7 @@
 
 <div *ngIf="mostrar"
 class="col-12 col-md-12 text-center">
-    <button class="col-6 col-md-3 text-center"
+    <button class="col-6 col-md-3 text-center btn btn-info"
     (click)="descargarPDF()">
         Descargar PDF</button>
 </div>

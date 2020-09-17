@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProyectospComponent } from './proyectosp/proyectosp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 
 
@@ -18,7 +19,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
   HomeComponent,
   ProyectospComponent,
   DashboardComponent,
-  NopagefoundComponent
+  NopagefoundComponent,
+  GaleriaComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     HomeComponent,
     ProyectospComponent,
     DashboardComponent,
-    NopagefoundComponent
+    NopagefoundComponent,
+    GaleriaComponent
   ]
 })
 export class PagesModuleModule { }
