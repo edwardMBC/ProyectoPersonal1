@@ -4,3 +4,6 @@
 .dpopus{
     text-align: center;
 }
+#map{
+    z-index: 100;
+}

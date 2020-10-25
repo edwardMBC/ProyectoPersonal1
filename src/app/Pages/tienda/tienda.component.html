@@ -1,0 +1,60 @@
+<div class="row text-white m-0 p-0" id="megacontainer">
+    <div class="row col-12 p-3 m-0 text-center" id="container1">
+        <div class="col-12 text-center mx-0">
+            <h2>Tienda virtual</h2>
+        </div>
+        <div class="col-12">
+            <p>En esta sección, verás un diseño básico y simulación de 
+                tienda virtual. Donde el visitante y también cliente, puede
+                ver variados productos, la cantidad disponible que hay, una 
+                breve descripción y claro, puede llenar y liberar su carrito 
+                de compras a voluntad, viendo en una ventana emergente el 
+                contenido y el total a pagar.  
+            </p>
+        </div>
+    </div>
+    <!--Carrito de compras-->
+    <div class="row col-12">
+        <div class="col-12 borderbox" id="carritoA">
+            <div class="col-12">
+                <button class="col-2 col-md-1 p-0 btn btn-primary" id="botoncarrito"
+                (click)="carritoactive()">
+                <img class="col-12" src="assets/recursos/carrito.png">
+                <p class="p-0 m-0">Tu carrito</p>
+                </button>
+            </div>
+
+            <div class="col-12">
+                <app-carrito class="row col-8" *ngIf="carrito"
+                [codigos]="listacarrito"
+                [listacode]="Productos"
+                [active]="carrito"></app-carrito>
+            </div>
+        </div>
+    </div>
+
+    <!--Cuerpo del mostrador-->
+
+    <div class="row col-12 text-center p-0 m-0" >
+        <div class="col-12 col-md-4 producto"
+        *ngFor="let Producto of Productos">
+            <img class="maxy col-12" src={{Producto.data.imagen}}>
+            <div class="maxy col-12">
+                <h4 class="textbwhite py-1">{{Producto.data.nombre}}</h4>
+                <h5 class="textbwhite py-1">{{Producto.data.precio}}</h5>
+                <p class="col-12 textbwhite py-1">{{Producto.data.descripccion}}
+                </p>
+                <div class="col-6">
+                    <button (click)="listcarrito(Producto.codigo)"
+                    class="col-6 p-0 btn btn-success" id="" 
+                    ><img class="col-12" src="assets/recursos/carrito.png"></button>
+                    <button  (click)="listdeseos(Producto.codigo)"
+                    class="col-6 p-0 btn btn-warning" id="" 
+                    ><img class="col-12" src="assets/recursos/listadeseos.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

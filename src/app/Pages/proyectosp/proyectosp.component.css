@@ -1,8 +1,5 @@
 #container2{
-    background-image: url("src/assets/fondos/madera.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    
+    background-color: slategray;
 }
 #containner3{
     background-image: url("src/assets/fondos/calculadora.jpg");

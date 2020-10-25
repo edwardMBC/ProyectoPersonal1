@@ -2,9 +2,9 @@
 @import "~leaflet/dist/leaflet.css";
 body{
     background-color: hsl(60, 4%, 34%);
-    background-image: url('../src/assets/fondos/tablero.jpg');
+    /*background-image: url('../src/assets/fondos/tablero.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed
+    background-attachment: fixed*/
 
 }
 .dpopus{

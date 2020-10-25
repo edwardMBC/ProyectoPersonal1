@@ -1,0 +1,60 @@
+#container1{
+    background-image: url("src/assets/fondos/singopen.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.producto{
+    /*
+    background-image: url("src/assets/recursos/cajamadera.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-color: darkgrey;
+    */
+    border-radius: 20px;
+}
+.maxy{
+    max-height: 13em;
+    min-height: 13em;
+}
+#megacontainer{
+    background-color: white;
+    /*
+    background-image: url("src/assets/recursos/almacen.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    */
+}
+.tablon{
+    background-image: url("src/assets/recursos/tablon.png");
+    background-size:100% 100%;
+}
+.textbwhite{
+    background-color:darkgrey;
+    border-radius: 20px;
+    color: black;
+}
+#botoncarrito{
+    /*
+    position: fixed;
+    z-index: 100;
+    position: relative;
+    left: 70%;
+    */
+    float: right;
+    width: 100%;
+}
+#carritoA{
+    z-index: 100;
+    position: fixed;
+    margin: 0%;
+}
+.floatright{
+    float: right;
+}
+.borderbox{
+    /*
+    */
+    border-radius: 30px;
+}

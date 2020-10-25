@@ -6,6 +6,7 @@ import { DescrippersoComponent } from './descripperso/descripperso.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { ProyectospComponent } from './proyectosp/proyectosp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TiendaComponent } from './tienda/tienda.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
       {path:'', component:HomeComponent},
       {path: 'descripccionpersonal', component:DescrippersoComponent},
       {path: 'Proyectos', component: ProyectospComponent},
-      {path: 'Galeria', component: GaleriaComponent}
+      {path: 'Galeria', component: GaleriaComponent},
+      {path: 'Tienda', component: TiendaComponent}
     ]
   }
 ];

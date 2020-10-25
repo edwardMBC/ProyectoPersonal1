@@ -10,6 +10,7 @@ import { ProyectospComponent } from './proyectosp/proyectosp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { TiendaComponent } from './tienda/tienda.component';
 
 
 
@@ -20,7 +21,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
   ProyectospComponent,
   DashboardComponent,
   NopagefoundComponent,
-  GaleriaComponent
+  GaleriaComponent,
+  TiendaComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     ProyectospComponent,
     DashboardComponent,
     NopagefoundComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    TiendaComponent
   ]
 })
 export class PagesModuleModule { }
